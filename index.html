@@ -1,0 +1,53 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;600&family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-div">   
+        <div id="game">
+            <h1>Connect 4!</h1>
+            <!-- <table id="board"></table> -->
+        </div>
+        <div id="score-panel">
+            <div id="high-score">
+                <h1>HIGH SCORE</h1>
+                <div class='black-box'>
+                    <div class='p1-half'>
+                        <h2 class='p1-title'>Player 1</h2>
+                        <h2 id='p1-high-score' class='score high-score'></h2>  
+                    </div>
+                    <div class='p2-half'>
+                        <h2 class='p2-title'>Player 2</h2>
+                        <h2 id='p2-high-score' class='score high-score'></h2>
+                    </div>
+                </div>
+            </div>
+            <div id="curr-score">
+                <h1>CURRENT SCORE</h1>
+                <div class='black-box'>
+                    <div class='p1-half'>
+                        <h2 class='p1-title'>Player 1</h2>
+                        <h2 id='p1-curr-score' class='score'></h2>
+                    </div>
+                    <div class='p2-half'>
+                        <h2 class='p2-title'>Player 2</h2>
+                        <h2 id='p2-curr-score' class='score'></h2>
+                    </div>
+                </div>
+            </div>
+            <div id='reset-section'>
+                <input type='submit' id="reset" class="button" value="RESET GAME">
+                <input type='submit' id="memory" class="button" value="RESET ALL">
+            </div>
+            </input>
+        </div>
+    </div>  
+<script src="connect4.js"></script>
+
+</body>
+</html>
